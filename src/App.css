@@ -1,9 +1,9 @@
-.App {
+#header {
 	text-align: center;
 }
 
 .App-name {
-	height: 40vmin;
+	height: 20vmin;
 	pointer-events: none;
 }
 
@@ -16,4 +16,7 @@
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
 	color: white;
+}
+.navbar-background {
+	background-color: blue;
 }
