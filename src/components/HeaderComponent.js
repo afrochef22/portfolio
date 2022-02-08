@@ -1,19 +1,30 @@
 import React, { Component } from "react";
 import { Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 class Header extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			isHovered: false,
+			arrowRotate: "arrow",
 		};
-		this.toggleHover = this.toggleHover.bind(this);
+		this.toggleHoverUp = this.toggleHoverUp.bind(this);
+		this.toggleHoverDown = this.toggleHoverDown.bind(this);
 	}
 
-	toggleHover() {
-		this.setState((prevState) => ({ isHovered: !prevState.isHovered }));
+	toggleHoverDown() {
+		this.setState({
+			isHovered: true,
+			arrowRotate: "arrow-rotate-down",
+		});
+	}
+	toggleHoverUp() {
+		this.setState({
+			isHovered: true,
+			arrowRotate: "arrow-rotate-up",
+		});
 	}
 
 	render() {
@@ -28,15 +39,17 @@ class Header extends Component {
 						<Button
 							className="button"
 							outline
-							onMouseEnter={this.toggleHover}
-							onMouseLeave={this.toggleHover}
+							onMouseEnter={this.toggleHoverDown}
+							onMouseLeave={this.toggleHoverUp}
+							href="#about"
+							style={{ color: "#fff" }}
 						>
 							Learn more
-							{this.state.isHovered ? (
-								<FontAwesomeIcon className="arrow" icon={faArrowDown} />
-							) : (
-								<FontAwesomeIcon className="arrow" icon={faArrowRight} />
-							)}
+							<FontAwesomeIcon
+								className="arrow"
+								className={this.state.arrowRotate}
+								icon={faArrowRight}
+							/>
 						</Button>
 					</div>
 				</header>

@@ -45,7 +45,7 @@ class SiteNavbar extends Component {
 									</NavLink>
 								</NavItem>
 								<NavItem>
-									<NavLink onClick={this.toggleNav} href="#">
+									<NavLink onClick={this.toggleNav} href="#projects">
 										<span className="nav-item">PROJECTS</span>
 									</NavLink>
 								</NavItem>
