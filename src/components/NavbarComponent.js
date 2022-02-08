@@ -7,7 +7,6 @@ import {
 	NavLink,
 	NavbarToggler,
 	Collapse,
-	NavbarText,
 } from "reactstrap";
 
 class SiteNavbar extends Component {
@@ -30,29 +29,29 @@ class SiteNavbar extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Navbar light sticky="top" expand="sm" className="navbar-background">
+				<Navbar dark sticky="top" expand="sm" className="navbar-background">
 					<div className="container">
 						<NavbarToggler onClick={this.toggleNav} />
 						<Collapse isOpen={this.state.isNavOpen} navbar>
-							<Nav navbar color="light" light className="me-auto">
+							<Nav navbar className="me-auto">
 								<NavItem>
 									<NavLink onClick={this.toggleNav} href="#header">
-										Home
+										<span className="nav-item">HOME</span>
+									</NavLink>
+								</NavItem>
+								<NavItem>
+									<NavLink onClick={this.toggleNav} href="#about">
+										<span className="nav-item">ABOUT</span>
 									</NavLink>
 								</NavItem>
 								<NavItem>
 									<NavLink onClick={this.toggleNav} href="#">
-										About
+										<span className="nav-item">PROJECTS</span>
 									</NavLink>
 								</NavItem>
 								<NavItem>
 									<NavLink onClick={this.toggleNav} href="#">
-										Projects
-									</NavLink>
-								</NavItem>
-								<NavItem>
-									<NavLink onClick={this.toggleNav} href="#">
-										Contact
+										<span className="nav-item">CONTACT</span>
 									</NavLink>
 								</NavItem>
 							</Nav>

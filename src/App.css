@@ -1,5 +1,38 @@
+:root {
+	--primary-bg: #112031;
+	--secondary-bg: #152d35;
+	--third-bg: #d4ecdd;
+	--first-highlight: rgb(209, 6, 6);
+	--second-highlight: #345b63;
+	--text: #fff;
+}
+
 #header {
 	text-align: center;
+}
+.button {
+	color: var(--first-highlight);
+	margin: 20px;
+}
+.arrow {
+	margin-left: 15px;
+}
+
+.section-title {
+	margin-top: 100px;
+}
+
+.section-target {
+	height: 70px;
+}
+
+.section-container {
+	text-align: center;
+	min-height: 100vh;
+}
+
+.highlight {
+	color: var(--first-highlight);
 }
 
 .App-name {
@@ -15,8 +48,36 @@
 	align-items: center;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
-	color: white;
+	color: var(--text);
 }
 .navbar-background {
-	background-color: blue;
+	background-color: var(--secondary-bg);
+	border-bottom: solid;
+	border-color: var(--first-highlight);
+}
+.nav-item {
+	font-size: 20px;
+	margin: 0 10px;
+}
+.nav-item:hover {
+	color: var(--first-highlight);
+}
+
+.underline {
+	border-bottom: black;
+	border-style: solid;
+	margin: 0 45%;
+	margin-bottom: 70px;
+}
+
+.tech-logo {
+	color: var(--primary-bg);
+}
+
+.tech-logo-container {
+	/* margin: 0 20%; */
+}
+
+.about-body {
+	background-color: var(--secondary-bg);
 }
