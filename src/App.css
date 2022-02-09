@@ -162,15 +162,20 @@
 	color: #fff !important;
 	opacity: 0.9 !important;
 }
-/* 
-.cards {
-	display: flex;
-	justify-content: center;
-	margin-top: 2em;
-	width: 100%;
-	min-width: 500px;
-	flex-wrap: wrap;
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-} */
+
+.form-container {
+	width: 50%;
+	margin: auto;
+	padding: 40px;
+	background-color: var(--primary-bg);
+	border-radius: 20px;
+	color: #fff;
+}
+
+.social-container {
+	margin-top: 40px;
+}
+
+.social-icon {
+	padding: 10px;
+}
