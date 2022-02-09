@@ -36,7 +36,7 @@ class Projects extends Component {
 	}
 	render() {
 		return (
-			<div className="project-body">
+			<div className="body-dark">
 				<div className="section-target" id="projects"></div>
 
 				<div className="section-container tech-logo-container">

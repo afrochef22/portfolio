@@ -50,7 +50,7 @@ class SiteNavbar extends Component {
 									</NavLink>
 								</NavItem>
 								<NavItem>
-									<NavLink onClick={this.toggleNav} href="#">
+									<NavLink onClick={this.toggleNav} href="#contact">
 										<span className="nav-item">CONTACT</span>
 									</NavLink>
 								</NavItem>

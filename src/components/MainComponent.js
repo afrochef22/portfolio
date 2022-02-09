@@ -3,6 +3,7 @@ import Header from "./HeaderComponent";
 import SiteNavbar from "./NavbarComponent";
 import About from "./AboutComponent";
 import Projects from "./ProjectComponent";
+import Contact from "./ContactComponents";
 
 class Main extends Component {
 	render() {
@@ -12,6 +13,7 @@ class Main extends Component {
 				<SiteNavbar />
 				<About />
 				<Projects />
+				<Contact />
 			</div>
 		);
 	}

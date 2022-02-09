@@ -15,7 +15,7 @@ import { Container, Row, Col } from "reactstrap";
 
 function About() {
 	return (
-		<div className="about-section">
+		<div className="body-light">
 			<div className="section-target" id="about"></div>
 			<div className="section-container">
 				<h1 className="section-title">ABOUT</h1>

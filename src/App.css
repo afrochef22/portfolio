@@ -74,6 +74,14 @@
 	color: var(--first-highlight);
 }
 
+.body-dark {
+	background-color: var(--primary-bg);
+}
+
+.body-light {
+	background-color: var(--third-bg);
+}
+
 .App-name {
 	height: 20vmin;
 	pointer-events: none;
@@ -116,10 +124,6 @@
 	margin-bottom: 70px;
 }
 
-.about-section {
-	background-color: var(--third-bg);
-}
-
 .tech-logo {
 	color: var(--primary-bg);
 }
@@ -138,10 +142,6 @@
 }
 .sub-title {
 	margin-bottom: 40px;
-}
-
-.project-body {
-	background-color: var(--primary-bg);
 }
 
 .project-card {
