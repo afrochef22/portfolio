@@ -156,11 +156,24 @@
 	height: 300px;
 	object-fit: cover;
 	transition: all 0.5s ease;
+	background-color: var(--third-bg);
 }
 
 .project-img:hover {
 	color: #fff !important;
 	opacity: 0.9 !important;
+}
+
+.card-info {
+	margin: 10% 0;
+}
+
+.card-icon {
+	margin: 0 3%;
+}
+
+.card-button {
+	margin: 2%;
 }
 
 .form-container {
