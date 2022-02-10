@@ -31,7 +31,7 @@ class Projects extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			isHovered: true,
+			isHovered: false,
 			isHovered2: false,
 		};
 
