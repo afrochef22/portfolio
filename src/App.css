@@ -192,3 +192,8 @@
 .social-icon {
 	padding: 10px;
 }
+
+.name {
+	margin: 100 !important;
+	display: inline-block;
+}
