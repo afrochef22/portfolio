@@ -161,7 +161,7 @@
 
 .project-img:hover {
 	color: #fff !important;
-	opacity: 0.9 !important;
+	/* opacity: 0.9 !important; */
 }
 
 .card-info {
@@ -172,8 +172,17 @@
 	margin: 0 3%;
 }
 
+.card-icon-container {
+	display: inline;
+}
+
 .card-button {
 	margin: 2%;
+	background-color: var(--primary-bg) !important;
+}
+
+.card-button:hover {
+	background-color: var(--second-highlight) !important;
 }
 
 .form-container {
@@ -196,8 +205,4 @@
 .name {
 	margin: 100 !important;
 	display: inline-block;
-}
-
-.inline {
-	display: inline !important;
 }
