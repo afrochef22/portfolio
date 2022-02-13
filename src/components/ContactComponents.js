@@ -52,26 +52,50 @@ class Contact extends Component {
 						</Form>
 					</div>
 					<div className="social-container">
-						<FontAwesomeIcon
-							className="social-icon"
-							size="3x"
-							icon={faLinkedin}
-						/>
-						<FontAwesomeIcon
-							className="social-icon"
-							size="3x"
-							icon={faTwitter}
-						/>
-						<FontAwesomeIcon
-							className="social-icon"
-							size="3x"
-							icon={faGithub}
-						/>
-						<FontAwesomeIcon
-							className="social-icon"
-							size="3x"
-							icon={faInstagram}
-						/>
+						<a
+							href="https://www.linkedin.com/in/ashanti-rogers-2879b138/"
+							target={"_blank"}
+							className="a-tag"
+						>
+							<FontAwesomeIcon
+								className="social-icon grow"
+								size="3x"
+								icon={faLinkedin}
+							/>
+						</a>
+						<a
+							href="https://twitter.com/RogersAshanti"
+							target={"_blank"}
+							className="a-tag"
+						>
+							<FontAwesomeIcon
+								className="social-icon grow"
+								size="3x"
+								icon={faTwitter}
+							/>
+						</a>
+						<a
+							href="https://github.com/afrochef22twi"
+							target={"_blank"}
+							className="a-tag"
+						>
+							<FontAwesomeIcon
+								className="social-icon grow"
+								size="3x"
+								icon={faGithub}
+							/>
+						</a>
+						<a
+							href="https://www.instagram.com/afrochef22/"
+							target={"_blank"}
+							className="a-tag"
+						>
+							<FontAwesomeIcon
+								className="social-icon grow"
+								size="3x"
+								icon={faInstagram}
+							/>
+						</a>
 					</div>
 				</div>
 			</div>

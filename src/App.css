@@ -6,7 +6,21 @@
 	--second-highlight: #345b63;
 	--text: #fff;
 }
+.a-tag {
+	color: var(--primary-bg);
+	transition: all 0.2s ease-in-out;
+}
 
+.a-tag:hover {
+	color: var(--second-highlight);
+}
+.grow {
+	transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+	transform: scale(1.2);
+}
 .primary-bg {
 	color: var(--primary-bg);
 }
