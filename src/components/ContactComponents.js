@@ -8,12 +8,35 @@ import {
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import emailjs from "emailjs-com";
 
 class Contact extends Component {
 	constructor(props) {
 		super(props);
+
+		this.sendEmail = this.sendEmail.bind(this);
 	}
 
+	sendEmail(e) {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				process.env.REACT_APP_YOUR_SERVICE_ID,
+				process.env.REACT_APP_YOUR_TEMPLATE_ID,
+				e.target,
+				process.env.REACT_APP_YOUR_USER_ID
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+		e.target.reset();
+	}
 	render() {
 		return (
 			<div className="body-light">
@@ -22,7 +45,7 @@ class Contact extends Component {
 					<h1 className="section-title">Contact</h1>
 					<div className="underline"></div>
 					<div className="form-container">
-						<Form inline>
+						<Form inline onSubmit={this.sendEmail}>
 							<FormGroup>
 								<Label for="name" hidden>
 									Name
