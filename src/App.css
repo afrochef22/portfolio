@@ -32,6 +32,9 @@
 .third-bg {
 	color: var(--third-bg);
 }
+.third-bg-background {
+	background-color: var(--third-bg) !important;
+}
 
 .first-highlight {
 	color: var(--first-highlight);

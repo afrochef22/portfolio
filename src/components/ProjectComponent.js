@@ -12,6 +12,9 @@ import {
 	Row,
 	Col,
 	Container,
+	Modal,
+	ModalBody,
+	ModalHeader,
 } from "reactstrap";
 import pomodoro from "../images/pomodoro.png";
 import happyLife from "../images/happyLifePic2.png";
@@ -35,10 +38,18 @@ class Projects extends Component {
 		this.state = {
 			isHovered: false,
 			isHovered2: false,
+			isModalOpen: false,
 		};
 
 		this.toggleHover = this.toggleHover.bind(this);
 		this.toggleHover2 = this.toggleHover2.bind(this);
+		this.toggleModal = this.toggleModal.bind(this);
+	}
+
+	toggleModal() {
+		this.setState({
+			isModalOpen: !this.state.isModalOpen,
+		});
 	}
 
 	toggleHover() {
@@ -128,8 +139,8 @@ class Projects extends Component {
 								<ScrollAnimation animateIn="fadeInLeftBig">
 									<Card
 										className="project-card"
-										onMouseEnter={this.toggleHover2}
-										onMouseLeave={this.toggleHover2}
+										onMouseEnter={() => this.setState({ isHovered2: true })}
+										onMouseLeave={() => this.setState({ isHovered2: false })}
 									>
 										{this.state.isHovered2 ? (
 											<React.Fragment>
@@ -166,8 +177,9 @@ class Projects extends Component {
 													</CardBody>
 													<Button
 														className="card-button"
-														href="#"
-														target="_blank"
+														// href="#"
+														// target="_blank"
+														onClick={this.toggleModal}
 													>
 														Visit
 													</Button>
@@ -193,6 +205,24 @@ class Projects extends Component {
 						</Row>
 					</Container>
 				</div>
+				<Modal
+					centered
+					isOpen={this.state.isModalOpen}
+					toggle={this.toggleModal}
+				>
+					<ModalBody>
+						<h6>Working hard to bring this to life.</h6>{" "}
+						<h6>Check back soon.</h6>
+					</ModalBody>
+
+					<Button
+						className="card-button third-bg-background"
+						style={{ margin: "0px 40px 10px" }}
+						onClick={this.toggleModal}
+					>
+						Got it
+					</Button>
+				</Modal>
 			</div>
 		);
 	}
