@@ -3,6 +3,7 @@ import { Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Fade, Transform } from "react-animation-components";
+import backgroundImage from "../images/space.jpeg";
 
 class Header extends Component {
 	constructor(props) {
@@ -32,15 +33,18 @@ class Header extends Component {
 	render() {
 		return (
 			<div id="header">
-				<header className="App-header">
+				<header
+					className="App-header"
+					style={{ backgroundImage: `url(${backgroundImage})` }}
+				>
 					<Fade in>
-						<h1>
+						<h1 className="header-text">
 							Hello, I'm{" "}
 							<Fade delay={200} in className="name">
 								<span className="highlight">Ashanti Rogers</span>.
 							</Fade>
 						</h1>
-						<h2>I'm a full-stack web developer</h2>
+						<h2 className="header-text">I'm a full-stack web developer</h2>
 						<div>
 							<Transform
 								// enterTransform="translateX(1000px)"

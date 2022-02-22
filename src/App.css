@@ -48,6 +48,11 @@
 #header {
 	text-align: center;
 }
+
+.header-text {
+	color: var(--text);
+	font-size: 3rem;
+}
 .button {
 	margin: 20px;
 }
@@ -103,6 +108,7 @@
 
 .App-header {
 	background-color: #282c34;
+	background-image: "../images/happyLifePic2.png";
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
