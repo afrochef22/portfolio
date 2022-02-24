@@ -31,6 +31,7 @@ import {
 	faPython,
 } from "@fortawesome/free-brands-svg-icons";
 import ScrollAnimation from "react-animate-on-scroll";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 class Projects extends Component {
 	constructor(props) {
@@ -101,6 +102,17 @@ class Projects extends Component {
 																className="card-icon"
 																size="1x"
 																icon={faJs}
+															/>
+														</ScrollAnimation>
+														<ScrollAnimation
+															className="card-icon-container"
+															delay={200}
+															animateIn="bounceIn"
+														>
+															<FontAwesomeIcon
+																className="card-icon"
+																size="1x"
+																icon={faDatabase}
 															/>
 														</ScrollAnimation>
 													</CardHeader>

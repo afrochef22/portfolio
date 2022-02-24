@@ -33,7 +33,7 @@
 	color: var(--third-bg);
 }
 .third-bg-background {
-	background-color: var(--third-bg) !important;
+	background-color: var(--third-bg);
 }
 
 .first-highlight {
